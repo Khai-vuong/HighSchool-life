@@ -1,0 +1,85 @@
+/*Mono fonts*/
+@font-face {
+	font-family: Ubuntu;
+	src: url(../fonts/UbuntuMono-Bold.ttf);
+}
+
+
+/*Sans Serif fonts*/
+@font-face {
+	font-family: Comic-Sans;
+	src: url(../fonts/SVN-Comic-Sans-MS.ttf);
+}
+
+@font-face {
+	font-family: Lexend;
+	src: url(../fonts/Lexend-Medium.ttf);
+}
+
+@font-face {
+	font-family: Gowun-Dodum;
+	src: url(../fonts/Gowun-Dodum.ttf);	
+}
+
+
+/*Display fonts*/
+@font-face {
+	font-family: Comfortaa;
+	src: url(../fonts/Comfortaa.ttf);
+}
+
+
+/*Hand-writing fonts*/
+@font-face {
+	font-family: Yomogi;
+	src: url(../fonts/Yomogi.ttf);
+}
+
+@font-face {
+	font-family: SigmarOne;
+	src: url(../fonts/SigmarOne.ttf);
+}
+
+
+/*General settings*/
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.45;
+
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+section {
+	text-align: center;
+	padding: 40px 0px;
+}
+
+section .container {
+	position: relative;
+	margin: 0 auto;
+}
+
+/*
+	File này có chức năng y hệt public-file.css
+	File này có: 
+		Tất cả các font vừa được thêm vào trong folder "fonts".
+		#def 1em = 16px;
+		#def color = white;
+		Tag <a> ko có decoration, và color white nốt.
+		Tag <section> sẽ giữ text ở center và có 1 phần padding trên & dưới
+		<section> > .container có position relative, align center cho mọi object.
+*/

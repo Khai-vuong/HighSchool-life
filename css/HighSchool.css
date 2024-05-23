@@ -1,0 +1,338 @@
+@font-face {
+	font-family: Ubuntu;
+	src: url(../fonts/UbuntuMono-Bold.ttf);
+}
+
+@font-face {
+	font-family: Comfortaa;
+	src: url(../fonts/Comfortaa.ttf);
+}
+
+@font-face {
+	font-family: SigmarOne;
+	src: url(../fonts/SigmarOne.ttf);
+}
+
+@font-face {
+	font-family: Comic-Sans;
+	src: url(../fonts/SVN-Comic-Sans-MS.ttf);
+}
+
+@font-face {
+	font-family: Yomogi;
+	src: url(../fonts/Yomogi.ttf);
+}
+
+@font-face {
+	font-family: Lexend;
+	src: url(../fonts/Lexend-Medium.ttf);
+}
+
+/*General settings*/
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.45;
+
+	/*background: linear-gradient(to bottom, rgba(178, 254, 250, 0.5) 20%, rgba(14, 210, 247, 0.5));*/
+	/*background-color: burlywood;*/
+	/*background-color: #FAFAFA;*/
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+section {
+	text-align: center;
+	padding: 40px 0px;
+}
+
+section .container {
+	position: relative;
+	margin: 0 auto;
+}
+
+/*Nav*/
+nav {
+	position: relative;	
+	text-align: left;	
+	width: 100%;
+
+	padding: 10px 0;
+
+	background-color: black;
+	opacity: 80%;
+
+	color: white;
+	font-size: 1.5em;
+	font-family: Comfortaa;
+	text-indent: 2%;
+}
+
+/*Header*/
+header {
+	color: white;
+	text-align: center;
+}
+
+header .container {
+	position: relative;
+	height: 660px;	
+	width: auto;
+
+	margin: 0 auto;
+
+	min-width: 160px;
+	background-color: #42A5F5;
+
+	border-bottom: solid 2px #333333;
+}
+
+header button {
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	width: 5%;
+
+	padding: 0 25px;
+
+	color: black;
+	background-color: snow;
+	opacity: 0;
+
+	/*display: none;*/
+
+	transition: opacity 0.25s;
+
+	font-size: 2.5em;
+}
+
+header button:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+header .left-bt {
+	left: 0px;
+	bottom: 0px;
+}
+
+header .right-bt {
+	right: 0px;
+	bottom: 0px;
+}
+
+header img {
+	display: inline-block;
+
+	height: 100%;
+	width: 90%;
+
+	margin: 0 auto;
+	bottom: 0px;
+}
+
+/*Features*/
+.features a {
+	padding: 0 50px;
+}
+
+.feature {
+	display: inline-block;
+	width: 22%;
+	height: 30%;
+
+	word-wrap: break-word;
+	box-shadow: none;
+
+	border: solid 4px black;
+	border-radius: 20px;
+
+	padding: 20px 20px;	
+
+	color: black;
+	font-family: Comfortaa;
+	font-size: 1.25em;
+	font-weight: 100;
+
+	background-color: snow;	
+}
+/* cannot use class to change color for the caption (due to the library)
+	So I had to replace it with id
+*/
+#caption--red {
+	background-color: coral;
+}
+
+#caption--green {	
+	/*background-color: dodgerblue;*/
+	background-color: springgreen;
+}
+
+#caption--yellow {
+	background-color: gold;
+}
+
+/*Introductions*/
+
+/*Grouping parts*/
+.about-me, .about-page, .notices{
+	padding: 40px 0;	
+	/*background-color: lightgrey;*/
+
+	display: flex;
+	flex-direction: row;
+
+	/*border: solid 5px cornflowerblue;*/
+}
+
+
+.intro .text{
+	/*As flex item */
+	flex-grow: 2;
+
+	/* As flex container */
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+
+	transform: translate(0px, 20px);
+
+/*	border: solid 2px goldenrod;*/
+}
+
+.intro .title{
+	font-size: 3em;
+	font-family: Comfortaa;
+}
+
+.intro .content {	
+	color: black;
+	font-size: 1.25em;
+
+	font-family: Yomogi;
+	font-weight: bold;
+
+	width: 90%;
+
+/*	border: solid 2px blue; */
+}
+
+.intro img {
+	flex-grow: 1;
+
+	position: static;
+	min-width: 500px;
+	min-height: 500px;
+
+	width: 25%;
+	height: 25%;
+
+/*	border: solid 5px darkred;*/
+}
+
+/*Indivituals*/
+.about-page {
+	flex-direction: row-reverse;
+}
+
+.notices {
+	/*flex-direction: column;*/
+}
+
+.notices .text {
+	/*border: solid 5px lightcoral;*/
+	text-align: left;
+}
+
+.notices li {
+	padding-bottom: 20px;
+}
+
+.notices p {
+	text-indent: 1em;
+}
+
+/*Quotes*/
+.quote .container {
+	padding: 40px 0;
+	background-color: dodgerblue;
+}
+
+.quote p {
+	font-size: 1.5em;
+	font-family: Comfortaa;
+
+	margin-bottom: 20px;
+}
+
+.quote cite {
+	position: absolute;
+	text-indent: 150px;
+
+	font-style: italic;
+	font-weight: bold;
+	font-family: Comfortaa;
+}
+
+/*Footer*/
+footer .container {
+	position: relative;
+	width: auto;
+
+	min-width: 160px;
+	background-color: white;
+
+	display: flex;
+	justify-content: space-around;
+
+
+	/*border: solid 5px orchid;*/
+}
+
+.private-info, .sources {
+	display: inline-block;
+	width: 40%;
+
+	top: 0px;
+
+	/*border: solid 5px springgreen;*/
+}
+
+footer h2 {
+	font-size: 1.25em;
+	font-family: Comfortaa;
+}
+
+footer img {
+	max-height: 2em;
+	max-height: 2em;
+}
+
+footer li p {
+	display: inline-block;
+	font-family: Lexend;
+	font-size: 1em;
+
+	padding-bottom: 20px;
+}
+
+footer .copy-right {
+	/*text-indent: 3em;*/
+	font-family: Lexend;
+	font-size: 1em;
+}
+/*
+	Tạm xong Head Page, có thể thêm responsive vào layout
+	Footer dính lề trái quá
+*/
